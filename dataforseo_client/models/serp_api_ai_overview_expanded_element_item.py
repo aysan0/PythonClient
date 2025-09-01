@@ -22,6 +22,7 @@ class SerpApiAiOverviewExpandedElementItem(BaseSerpApiAiOverviewElementItem):
     position: Optional[StrictStr] = Field(default=None, description="the alignment of the element in SERP. can take the following values:. left, right")
     title: Optional[StrictStr] = Field(default=None, description="title of the element")
     text: Optional[StrictStr] = Field(default=None, description="text of the component")
+    markdown: Optional[StrictStr] = Field(default=None, description="markdown of the component")
     components: Optional[List[Optional[AiOverviewExpandedComponent]]] = Field(default=None, description="array of components of the element")
     references: Optional[List[Optional[AiModeAiOverviewReferenceInfo]]] = Field(default=None, description="additional references relevant to the item. includes references to webpages that may have been used to generate the ai_overview")
     __properties: ClassVar[List[str]] = [
